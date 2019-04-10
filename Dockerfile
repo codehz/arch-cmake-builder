@@ -8,7 +8,7 @@ LABEL "com.github.actions.color"="purple"
 LABEL "repository"="https://github.com/codehz/arch-cmake-builder"
 LABEL "homepage"="https://github.com/codehz/arch-cmake-builder"
 
-RUN pacman -Syu --needed --noconfirm base-devel cmake make gcc clang musl git meson ninja rsync
+RUN pacman -Syu --needed --noconfirm base-devel cmake make gcc clang musl git meson ninja rsync kernel-headers-musl
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
