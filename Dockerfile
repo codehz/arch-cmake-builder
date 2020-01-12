@@ -1,4 +1,4 @@
-FROM archlinux/base:latest
+FROM archlinux:latest
 
 LABEL "com.github.actions.name"="Archlinux CMake builder"
 LABEL "com.github.actions.description"="Build cmake project"
